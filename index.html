@@ -1,16 +1,284 @@
-<!-- Nouvelle section À propos -->
-<section id="apropos" class="section">
-  <h2>À propos</h2>
-  <div class="about">
-    <div class="about-text">
-      <p>Je m'appelle <b>Rella BA</b>, passionnée par la finance, le trading et l'entrepreneuriat.</p>
-      <p>Actuellement, je travaille dans le domaine <b>de la finance</b>, où j’ai acquis une solide expérience en gestion, analyse et optimisation des ressources.</p>
-      <p>En parallèle, je suis une <b>formation en développement web</b> car j’ai pour ambition de lancer ma propre <b>plateforme financière digitale</b>, afin de faciliter l’accès aux services financiers et d’innover dans ce secteur.</p>
-      <p>J’aime apprendre en continu, relever de nouveaux défis et transformer mes idées en projets concrets.</p>
-      <a href="cv.pdf" target="_blank">Télécharger mon CV</a>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio - Rella BA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background: #004080;
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    nav {
+      background: #0066cc;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #004080;
+    }
+    /* Projets */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .project-card button {
+      background: #00c2c2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .project-card button:hover {
+      background: #009999;
+    }
+    /* À propos */
+    .about {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .about-text {
+      flex: 1;
+      min-width: 300px;
+    }
+    .about-text p {
+      margin: 15px 0;
+      line-height: 1.6;
+    }
+    .about-text a {
+      display: inline-block;
+      background: #00c2c2;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .about-text a:hover {
+      background: #009999;
+    }
+    .about-img {
+      flex: 1;
+      text-align: center;
+    }
+    .about-img img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #00c2c2;
+    }
+    /* Compétences */
+    .skills {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .skill-box {
+      flex: 1;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      min-width: 280px;
+    }
+    .bar {
+      background: #ddd;
+      border-radius: 5px;
+      margin: 10px 0;
+      height: 8px;
+    }
+    .bar span {
+      display: block;
+      height: 100%;
+      background: #00c2c2;
+      border-radius: 5px;
+    }
+    /* Contact */
+    .contact {
+      background: #111;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .contact h2 {
+      color: white;
+    }
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact button {
+      background: #00c2c2;
+      border: none;
+      padding: 12px 25px;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      background: #009999;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #eee;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfolio de Rella BA</h1>
+    <p>Finance - Trading - Entrepreneuriat</p>
+  </header>
+
+  <nav>
+    <a href="#projets">Projets</a>
+    <a href="#apropos">À propos</a>
+    <a href="#competences">Compétences</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="projets" class="section">
+    <h2>Mes Projets</h2>
+    <div class="projects">
+      <div class="project-card">
+        <p>ETS SARA : Confection d’uniformes scolaires, équipements de sécurité et formation en couture.</p>
+        <small>#entrepreneuriat #gestion</small><br>
+        <button>Voir</button>
+      </div>
+      <div class="project-card">
+        <p>Projet de recyclage de plastique en Mauritanie pour l’écologie et l’économie circulaire.</p>
+        <small>#écologie #innovation</small><br>
+        <button>Voir</button>
+      </div>
+      <div class="project-card">
+        <p>Trading et marchés financiers : formation et projets académiques en finance.</p>
+        <small>#finance #trading</small><br>
+        <button>Voir</button>
+      </div>
     </div>
-    <div class="about-img">
-      <img src="photo link.jpeg" alt="Photo de Rella BA">
+  </section>
+
+  <!-- Section À propos -->
+  <section id="apropos" class="section">
+    <h2>À propos</h2>
+    <div class="about">
+      <div class="about-text">
+        <p>Je m'appelle <b>Rella BA</b>, passionnée par la finance, le trading et l'entrepreneuriat.</p>
+        <p>Actuellement, je travaille dans le domaine <b>de la finance</b>, où j’ai acquis une solide expérience en gestion, analyse et optimisation des ressources.</p>
+        <p>En parallèle, je suis une <b>formation en développement web</b> car j’ai pour ambition de lancer ma propre <b>plateforme financière digitale</b>, afin de faciliter l’accès aux services financiers et d’innover dans ce secteur.</p>
+        <p>J’aime apprendre en continu, relever de nouveaux défis et transformer mes idées en projets concrets.</p>
+        <a href="cv.pdf" target="_blank">Télécharger mon CV</a>
+      </div>
+      <div class="about-img">
+        <img src="photo link.jpeg" alt="Photo de Rella BA">
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section id="competences" class="section">
+    <h2>Mes Compétences</h2>
+    <div class="skills">
+      <div class="skill-box">
+        <h3>Soft Skills</h3>
+        <p>Gestion de projet</p>
+        <div class="bar"><span style="width: 80%"></span></div>
+        <p>Résolution de problème</p>
+        <div class="bar"><span style="width: 70%"></span></div>
+        <p>Adaptabilité</p>
+        <div class="bar"><span style="width: 90%"></span></div>
+      </div>
+      <div class="skill-box">
+        <h3>Hard Skills</h3>
+        <p>Finance & Comptabilité</p>
+        <div class="bar"><span style="width: 85%"></span></div>
+        <p>Excel & Outils financiers</p>
+        <div class="bar"><span style="width: 80%"></span></div>
+        <p>Trading / Marchés financiers</p>
+        <div class="bar"><span style="width: 75%"></span></div>
+        <p>Entrepreneuriat</p>
+        <div class="bar"><span style="width: 70%"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Vous avez un projet en tête ?</h2>
+    <p>N'hésitez pas à me contacter</p>
+    <form onsubmit="return validerFormulaire()">
+      <input type="text" id="prenom" placeholder="Votre prénom">
+      <input type="text" id="nom" placeholder="Votre nom">
+      <input type="text" id="sujet" placeholder="Votre sujet">
+      <textarea id="message" rows="5" placeholder="Écrivez votre message ici..."></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    Designed by Rella BA with HTML, CSS, JS | Tous droits réservés © 2025
+  </footer>
+
+  <script>
+    function validerFormulaire() {
+      let prenom = document.getElementById("prenom").value;
+      let nom = document.getElementById("nom").value;
+      let sujet = document.getElementById("sujet").value;
+      let message = document.getElementById("message").value;
+      if (prenom === "" || nom === "" || sujet === "" || message === "") {
+        alert("Veuillez remplir tous les champs !");
+        return false;
+      }
+      alert("Message envoyé avec succès !");
+      return true;
+    }
+  </script>
+</body>
+</html>
